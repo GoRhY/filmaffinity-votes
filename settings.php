@@ -2,7 +2,7 @@
 //LANGUAGE (es/en)
 $language = 'es';
 
-//TWEET WITH FILM POSTER (yes/no)
+//TWEET WITH FILM POSTER (yes/no -> will use twitter cards)
 $film_poster = 'yes';
 
 //FILM POSTER SIZE (small=49×71px/full=100x144px/main/large) (main and large have variable size and take more steps/time to get the image)

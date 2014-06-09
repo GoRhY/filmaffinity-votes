@@ -52,7 +52,7 @@ function get_info($user_id, $language = "es", $ignore, $film_poster_size = "full
 			}
 		}
 
-		$film_link = " http://www.filmaffinity.com/" . $language . "/" . $film_id;
+		$film_link = " http://www.filmaffinity.com/film" . $language . "/" . $film_id.".html";
 		$array_link[] = $film_link;
 
 	}
