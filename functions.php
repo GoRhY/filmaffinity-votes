@@ -111,8 +111,8 @@ function get_info($user_id, $language = "es", $ignore, $film_poster_size = "full
 				$tmdb_V3 = new TMDBv3($apikey);
 				$searchTitle = $tmdb_V3->searchMovie($tit,$language,$year);
 				$sizes = array("small"=>"w100","main"=>"w500","large"=>"w800","full"=>"original");
-				$film_poster_size = $sizes[$film_poster_size];				
-				$film_img = "https://image.tmdb.org/t/p/w".$film_poster_size."/".$searchTitle["results"][0]["poster_path"];
+				$new_film_poster_size = $sizes[$film_poster_size];			
+				$film_img = "https://image.tmdb.org/t/p/".$new_film_poster_size."/".$searchTitle["results"][0]["poster_path"];
 				if ($searchTitle["results"][0]["poster_path"] == "") $film_img = "";
 				$array_img[] = $film_img;
 			}else{

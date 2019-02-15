@@ -69,9 +69,11 @@ if($error!==true){
 				$x++;
 			}else{
 				echo "FAILED: ".$status . "<br /><img src=\"$array_img[$i]\" /><br><br>";
+				$failed = 1;
+				$x++;
 			}
 		}
-		if ($x > 0) {
+		if (($x > 0)&&($failed!=1)){
 			file_put_contents('last_id.txt', $new_last_id);
 		}
 	}
